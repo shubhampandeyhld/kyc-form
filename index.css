@@ -1,0 +1,165 @@
+*{
+	box-sizing: border-box;
+}
+button{
+	box-shadow: 0px;
+	outline: none;
+
+}
+button:focus{
+	box-shadow: none;
+}
+.header{
+	font-weight: bolder;
+	font-family: roman;
+	height:10vh;
+	font-size: 30px;
+	text-align: center;
+background-image: linear-gradient(rgb(50,120,220),rgb(80,180,250));
+}
+.form-container{
+
+position: relative;
+width:50%;
+box-shadow:0 0 5px  3px silver;
+}
+
+form{
+	padding-bottom:20px;
+}
+.email,.pan,.mobo,.name,.addhaar{
+visibility: hidden;
+color:red;
+font-weight: bold;
+}
+#image{
+	width:120px;
+}
+#image button{
+	width:100%;
+}
+#address
+{
+
+	text-align: justify;
+	opacity: .8;
+	width:45%;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-top: 15px;
+	height:3rem;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+input{
+	opacity: .8;
+	letter-spacing: 2px;
+	font-weight: bold;
+	width:	45%;
+	height:2.5rem;
+	font-size: 15px;
+	border-radius: 5px;
+
+}
+
+input:focus{	background: skyblue;
+	transition-delay: 1s;
+	transition-property: ease-in-out;
+}
+#address:focus{
+	background: skyblue;
+	transition-delay: 1s;
+	transition-property: ease-in-out;
+
+}
+
+input:hover{
+	transition: .8s;
+	border:2px solid skyblue ;
+}
+.label{
+	color:steelblue;
+	margin-top:15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width:6em;	
+	font-weight: bolder;
+	font-size:1.5rem;
+	display:inline-block;
+
+}
+#sub{
+	outline: none;
+	height: 60px;
+border-radius: 5px;
+	display: block;
+	width:20%;
+font-size: 25px;
+font-weight: bolder;
+	margin:auto;
+}
+#sub:focus{
+	box-shadow:none;
+}
+
+.mymodal{z-index: 1;
+  left:30vw;
+padding: 0px;
+margin-top:20px;
+top:40vh;
+display: none;
+  position: absolute;
+  width:30vw;
+  height: 8vw;
+}
+.mymodal button{height: 120px;
+}
+.mymodal .closemodal{
+height: 30px;
+outline: none;
+  position: relative;
+  left:29vw;
+  top:-126px;
+
+}
+@media screen and (max-width: 480px)
+{
+#sub{
+	width:50%;
+}
+
+	.form-container{
+		border-radius: 10px;
+		width:90% !important;
+	}
+
+	input{
+		color:black;
+		opacity: .8;
+		font-family:sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+	width:	100%;
+	height:2.5rem;
+	font-size: 15px;
+	border-radius: 5px;
+
+}
+#address{
+	width:100%;
+	margin:0px !important;
+}
+
+.label{
+	color:steelblue;
+	margin-top:15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width:6em;	
+	font-weight: bolder;
+	font-size:1rem;
+	display:inline-block;
+
+}
+}
